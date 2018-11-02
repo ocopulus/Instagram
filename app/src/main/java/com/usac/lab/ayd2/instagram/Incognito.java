@@ -42,11 +42,11 @@ public class Incognito extends AppCompatActivity {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 publicacion Publ = dataSnapshot.getValue(publicacion.class);
-                System.out.println("=======================================");
+                /*System.out.println("=======================================");
                 System.out.println(Publ.contenido);
                 for(String tag : Publ.hashtags){
                     System.out.println("Tag: "+tag);
-                }
+                }*/
                 datos miPub = new datos(Publ.contenido, Publ.dislikes, Publ.hashtags,
                         Publ.imagen, Publ.likes, Publ.nombre);
                 Lista.add(miPub);
