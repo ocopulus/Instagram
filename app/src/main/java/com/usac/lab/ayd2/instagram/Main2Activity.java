@@ -28,7 +28,7 @@ public class Main2Activity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        //Colocamos el fragmente inicial
+        //Colocamos el fragmente inicial2
         publicacionesFragment mianFragment = new publicacionesFragment();
         android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager()
                 .beginTransaction();
