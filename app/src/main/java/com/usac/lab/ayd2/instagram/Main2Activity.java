@@ -97,7 +97,11 @@ public class Main2Activity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_publicar) {
-            // Handle the camera action
+            regPublicacion mianFragment = new regPublicacion();
+            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager()
+                    .beginTransaction();
+            fragmentTransaction.replace(R.id.frameconteiner, mianFragment);
+            fragmentTransaction.commit();
         } else if (id == R.id.nav_publicaciones) {
             publicacionesFragment mianFragment = new publicacionesFragment();
             android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager()
