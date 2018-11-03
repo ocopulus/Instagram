@@ -79,7 +79,7 @@ public class regPublicacion extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Inflate the layout for this fragment2
         View vista = inflater.inflate(R.layout.fragment_reg_publicacion, container, false);
         //Initialize Views
         btnChoose = (Button) vista.findViewById(R.id.btnChoose);
