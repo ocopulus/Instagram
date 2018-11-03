@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".regPublicacion"
     android:orientation="vertical"
-    android:paddingTop="55dp">
+    android:paddingTop="60dp">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -16,23 +16,40 @@
         android:paddingRight="30dp">
         <Button
             android:id="@+id/btnChoose"
-            android:text="Choose"
-            android:layout_weight="wrap_content"
+            android:text="Imagen"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="100dp"/>
+            android:layout_marginRight="75dp"/>
 
         <Button
             android:id="@+id/btnUpload"
-            android:text="Upload"
-            android:layout_weight="wrap_content"
+            android:text="Publicar"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
 
 
+    <EditText
+        android:id="@+id/txtContenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contenido"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/hashtag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Hashtag"
+        android:inputType="textPersonName" />
+
     <ImageView
         android:id="@+id/imgView"
+        android:layout_weight="3"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
